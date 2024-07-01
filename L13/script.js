@@ -83,8 +83,23 @@
 //   i++;
 // }
 
+// 4.first and last digit sum
+
+// function sumFirstAndLastNumber(number) {
+//   let lastDigit = number % 10; 
+//   let firstDigit = number;
+
+//   while (firstDigit >= 10) {
+//       firstDigit = Math.floor(firstDigit / 10);
+//   }
+//   let sum = firstDigit + lastDigit;
+//   return sum;
+// }
+// let number = 12345;
+// console.log("Sum of first and last digit using while loop:", sumFirstAndLastNumber(number)); 
 
 
-// 4.first  number and last  number
+
+
 
 

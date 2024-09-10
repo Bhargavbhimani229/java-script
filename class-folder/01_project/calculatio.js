@@ -1,4 +1,6 @@
 let userName = prompt("Enter your name:");
+console.log(userName);
+
 
 let isname = document.getElementById('isname');
 isname.innerHTML = userName;

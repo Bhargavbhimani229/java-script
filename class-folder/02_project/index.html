@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Project</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <form id="container">
+    <div id="campak">
+      <h1>Age Program</h1>
+      <input type="number" id="jethyo" placeholder="Enter your age..">
+      <br>
+      <label for="number" id="filed"></label>
+      <button onclick="myFunction()" id="button">Click Me</button>
+    </div>
+  </form>
+
+  <script>
+    function myFunction() {
+      let age;
+      age = document.getElementById("jethyo").value;
+      console.log(age);
+
+      if (age == "") {
+        alert("Please Enter your age....");
+      }
+      else {
+        let store;
+        store = document.getElementById("filed");
+
+        if (age >= 0 && age <= 3) {
+          store.innerHTML = `Age is ${age}, Infant.`
+        }
+        else if (age >= 4 && age <= 12) {
+          store.innerHTML = `Age is ${age}, Child.`
+        }
+        else if (age >= 13 && age <= 17) {
+          store.innerHTML = `Age is ${age}, Teen.`
+        }
+        else if (age >= 18) {
+          store.innerHTML = `Age is ${age}, Adult.`
+        } 
+        else {
+          store.innerHTML = `Age is ${age}, Which is Invalid.`
+        }
+        event.preventDefault();
+      }
+
+
+    }
+  </script>
+
+
+</body>
+
+</html>

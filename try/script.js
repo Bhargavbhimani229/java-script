@@ -40,7 +40,10 @@
 
 // console.log(+false);
 
-console.log(typeof Boolean);
+// console.log(typeof Boolean);
+
+console.log(0 == false);
+
 
 
 

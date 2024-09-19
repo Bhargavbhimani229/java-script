@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body{
+    background-image: url(./wine-8949009_1280.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  h1{
+    font-weight: bold;
+  }
+  table{
+    margin-top: 100px;
+    border: 2px solid black;
+    border-collapse: collapse;
+  }
+  td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+  td:hover{
+   background-color: aqua;
+   transform: scale(1.2);
+   transition: transform 0.5s ease;
+  }
+  #myContainer{
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 200px;
+    width: 200px;
+    padding: 30px;
+    text-align: center;
+    margin: auto;
+    margin-top: 160px;
+    background-color: bisque;
+    background-color: black;
+  }
+  button{
+    margin-top: 15px;
+    width: 180px;
+    padding: 3px;
+    background-color: aqua;
+    border-radius: 5px;
+    border: 2px solid white;
+    color: black;
+    font-weight: 500;
+  }
+  input{
+    background-color: aqua;
+    box-shadow: 2px 1px white;
+    border: 2px solid white;
+    border-radius: 5px;
+  }
+  label{
+    color: aliceblue;
+    font-weight: 400;
+  }
+  #num1{
+    margin-top: 7px;
+  }
+  #num2{
+    margin-top: 7px;
+  }
+
+</style>
+<body>
+
+  <h1>Genrate Multiplication Table...😎</h1>
+  <form id="myContainer">
+
+  <label for="number" id="lable1" >Enter First Number:</label>
+  <input type="number" id="num1">
+
+  <label for="number" id="label2">Enter Second Number:</label>
+  <input type="number" id="num2">
+
+  <button type="button" onclick="mainTable()">Genrate Multiplication Table</button>
+  <button type="submit">Reset</button>
+
+  </form>
+
+  <div id="tableContainer"></div>
+  <script src="./script.js"></script>
+</body>
+</html>

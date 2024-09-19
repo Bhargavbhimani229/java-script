@@ -4,15 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <script>
-    let userName,result;
+  <div class="main" >
+    <h1>Good Morning..</h1>
+  </div>
+  <!-- <button class="btn2" onclick="mybtn2()">2nd Click</button> -->   
+  <button class="btn1" onclick="mybtn1()">1st Click</button>
 
-  userName =  prompt(`Enter a name: `);
-  result = userName[0].toUpperCase()
-  console.log(result+userName.slice(1,userName.length).toLowerCase());
-  
+  <script>
+    function mybtn1()
+    {
+      const main = document.getElementsByClassName("main")[0];
+      main.classList.remove('main');
+      main.classList.add('bgcolor');
+    }
   </script>
   
 </body>

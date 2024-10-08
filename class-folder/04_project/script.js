@@ -2,7 +2,7 @@ function mainFunction() {
   let inputValue = document.getElementById("box").value;
   
   if (inputValue === "") {
-    alert("please Enter Task..");
+    alert("please Enter Task...");
   }
   else {
     // Create a new div element for the task
@@ -17,7 +17,7 @@ function mainFunction() {
 
     // Create a delete button for the task
     let buttonElement = document.createElement('button');
-    buttonElement.setAttribute('class', 'delete-button');
+    buttonElement.setAttribute('id', 'delete-button');
     buttonElement.innerHTML = "Delete Task";
 
     // Append the button to the task div
@@ -30,9 +30,7 @@ function mainFunction() {
     buttonElement.addEventListener('click', function () {
       divElement.remove();  // Removes the task div
     });
-
   }
-
 }
 
 

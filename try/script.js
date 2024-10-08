@@ -115,20 +115,55 @@
 // console.log(myFunction(5));
 
 
-function myOuter(){
-  let outVariable = "bhargav Out";
+// function myOuter(){
+//   let outVariable = "bhargav Out";
 
-  console.log(outVariable);
+//   console.log(outVariable);
   // function myInner(){
   //   let innerVariable = "bhargav inner";
   //   console.log(innerVariable);
     
   // }
-  return myOuter; 
-}
+  // return myOuter; 
+// }
 
-const test = myOuter();
-test;
+// const test = myOuter();
+// test;
+
+// console.log("%c Hello world","backgroud-color:red; color:white; font-size:40px;");
+
+// console.log(arr.length);
+
+// for(let i=0;i< arr.length;i++)
+// {
+//   if(i%2==0)
+//   {
+//     console.log(arr[i]);
+//   }
+// }
+
+// let arr = [10,20,30,40,50];
+// let b= arr.filter(num =>num % 2 != 0);
+
+// console.log(b);
+
+// let arr= new Array(1,2,3,4,5);
+// let num = arr.map(a=> a+2);
+// console.log(num);
+
+// let arr= new Array(1,2,3,4,5);
+// let num = arr.filter(a=> a%2==0);
+// console.log(num);
+
+
+let arr= new Array(1,2,3,4,5);
+let num = arr.forEach(a=>console.log( a%2==0?a:""));
+// console.log(num);
+
+
+
+
+
 
 
 

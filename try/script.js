@@ -156,9 +156,10 @@
 // console.log(num);
 
 
-let arr= new Array(1,2,3,4,5);
-let num = arr.forEach(a=>console.log( a%2==0?a:""));
+// let arr= new Array(1,2,3,4,5);
+// let num = arr.forEach(a=>console.log( a%2==0?a:""));
 // console.log(num);
+
 
 
 

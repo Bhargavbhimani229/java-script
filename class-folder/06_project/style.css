@@ -1,0 +1,39 @@
+body{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+overflow-x: hidden;
+}
+
+#main-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-top: 150px;
+  transition: transform 0.5s ease-in-out; /* Smooth animation */
+}
+
+.animal-img {
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-left: 40px;
+  transition: transform 0.3s ease-in-out; /* Smooth scale on hover */
+}
+
+.animal-img:hover {
+  transform: scale(1.1); /* Scale the image when hovered */
+}
+
+
+#button-group{
+  text-align: center;
+  margin-top: 30px;
+ 
+}
+
+#button-group  i{
+  font-size: 30px; 
+}
+

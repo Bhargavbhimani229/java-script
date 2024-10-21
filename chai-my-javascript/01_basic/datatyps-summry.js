@@ -36,3 +36,33 @@ const myFun = function () {
 myFun();
 
 console.table([typeof (myArray), typeof (myObj), typeof (myFun)])
+
+
+// stak (primitive) & heap (non-primitive)
+
+// stak
+
+let myName = "Bhargav Bhimani";
+
+let myname1 = myName;
+myname1 = "bhagu bhimani";
+
+console.log(myName); // bhargav bhimani
+console.log(myname1); // bhagu bhimani
+
+
+// heap
+
+let myYoutube = {
+  id:"bhargav bhimani",
+  pw:"bhargav@123"
+}
+
+let my = myYoutube;
+my.id = "Bhagu bhimani"
+console.log(myYoutube.id);
+
+
+
+
+

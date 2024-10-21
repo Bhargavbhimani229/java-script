@@ -160,29 +160,36 @@
 // let num = arr.forEach(a=>console.log( a%2==0?a:""));
 // console.log(num);
 
+// function xyz(a,b){
+//  return sum=a+b;
+// }
+// console.log(xyz(5,5));
+
+
+const obj = {
+  name: "amay",
+  age:40,
+  add: "navsari",
+  spek(){
+    console.log(`My Name: ${this.name} age is: ${this.age} address is: ${this.add}`);
+  }
+}
+obj.spek()
 
 
 
+// const xyz=function (a,b){
+//   return sum=a+b;
+// }
+//  let byz = xyz(5,5);
+//  console.log(byz);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// const xyz=(a,b)=>{
+//   return sum=a+b;
+// }
+// let byz = xyz(5,5);
+//  console.log(byz);
+ 
 
 

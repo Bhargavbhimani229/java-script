@@ -2,7 +2,7 @@ function myRight() {
   let right = document.getElementById('right');
   let animalImg = document.querySelectorAll('.animal-img');
   
-  right.disabled = true; // Disable the button during the transition
+  // right.disabled = true; // Disable the button during the transition
   document.querySelector("#main-container").appendChild(animalImg[0]);
 
   setTimeout(() => {

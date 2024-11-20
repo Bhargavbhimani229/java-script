@@ -74,37 +74,37 @@
 //   switch (weekName) {
 //     case 1:
 //       console.log("mon");
-      
+
 //       break;
 
 //     case 2:
 //       console.log("tue");
-      
+
 //       break;
 
 //     case 3:
 //       console.log("wen");
-      
+
 //       break;
 
 //     case 4:
 //       console.log("thu");
-      
+
 //       break;
 
 //     case 5:
 //       console.log("fri");
-      
+
 //       break;
 
 //     case 6:
 //       console.log("sat");
-      
+
 //       break;
 
 //     case 7:
 //       console.log("sun");
-      
+
 //       break;
 
 //     default:
@@ -119,12 +119,12 @@
 //   let outVariable = "bhargav Out";
 
 //   console.log(outVariable);
-  // function myInner(){
-  //   let innerVariable = "bhargav inner";
-  //   console.log(innerVariable);
-    
-  // }
-  // return myOuter; 
+// function myInner(){
+//   let innerVariable = "bhargav inner";
+//   console.log(innerVariable);
+
+// }
+// return myOuter; 
 // }
 
 // const test = myOuter();
@@ -166,15 +166,15 @@
 // console.log(xyz(5,5));
 
 
-const obj = {
-  name: "amay",
-  age:40,
-  add: "navsari",
-  spek(){
-    console.log(`My Name: ${this.name} age is: ${this.age} address is: ${this.add}`);
-  }
-}
-obj.spek()
+// const obj = {
+//   name: "amay",
+//   age:40,
+//   add: "navsari",
+//   spek(){
+//     console.log(`My Name: ${this.name} age is: ${this.age} address is: ${this.add}`);
+//   }
+// }
+// obj.spek()
 
 
 
@@ -190,6 +190,56 @@ obj.spek()
 // }
 // let byz = xyz(5,5);
 //  console.log(byz);
- 
+
+// const gameName = new String('bhargav-hh');
+// const gameName= {
+//   id : "bhargav bhimani"
+// }
+// console.log(gameName.__proto__);
+
+
+// const newDate = new Date('2024-10-22');
+// console.log(newDate.toLocaleDateString());
+// console.log(newDate.toLocaleTimeString());
+// console.log(newDate.toJSON());
+// console.log(newDate.toTimeString('en-IN'));
+// console.log(newDate.getDay());
+// console.log(newDate.getFullYear());
+// console.log(newDate.getMonth()+1);
+// console.log(newDate.setTime());
+
+
+
+// const myDate = new Date('2024-10-22');
+
+// let name = function(a,b) {
+//    let sum = a+b;
+//     function inner(){
+//       console.log(sum);
+//     }
+//     return inner;
+// }
+// name(5,5)();
+
+// const gameName = new String('bhargav-hh');
+// console.log( typeof gameName);
+
+let str="hello";
+let c=0;
+while(str!= null){
+  c++;
+}
+for(let i=c-1;i>=0;i++){
+  console.log(str[i]);
+}
+
+
+
+
+
+
+
+
+
 
 

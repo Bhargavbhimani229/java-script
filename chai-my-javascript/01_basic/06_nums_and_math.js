@@ -22,6 +22,8 @@ console.log(Math.abs(-4));// 4
 console.log(Math.round(4.6)); // 5
 console.log(Math.ceil(4.2));// 5
 console.log(Math.floor(4.9));// 4
+console.log(Math.trunc(4.6)); // 4
+
 
 console.log(Math.random());// 0 or 1 ni vache j value avse
 console.log((Math.random()*10)+1);

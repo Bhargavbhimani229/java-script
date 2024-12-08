@@ -224,15 +224,25 @@
 // const gameName = new String('bhargav-hh');
 // console.log( typeof gameName);
 
-let str="hello";
-let c=0;
-while(str!= null){
-  c++;
-}
-for(let i=c-1;i>=0;i++){
-  console.log(str[i]);
-}
+// let str="hello";
+// let c=0;
+// while(str!= null){
+//   c++;
+// }
+// for(let i=c-1;i>=0;i++){
+//   console.log(str[i]);
+// }
 
+
+class Myclass{
+  name()
+  {
+    console.log("shubham");
+    
+  }
+}
+const copy = new Myclass();
+copy.name()
 
 
 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Interface</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="main-container">
+    <h1>Quick Quiz</h1>
+    <div class="qustions"></div>
+
+    <div class="time">
+      <p>Time Remaining: 15 seconds</p>
+      <div class="timer">
+        <span class="t" id="h">00</span>
+        <span class="t" id="m">00</span>
+        <span class="t" id="s">00</span>
+      </div>
+    </div>
+
+    <!-- Button Section -->
+    <div class="btn">
+      <button id="submitBtn" type="button">Submit</button>
+    </div>
+    <div id="feedback"></div>
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

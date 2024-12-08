@@ -1,0 +1,39 @@
+.main-box{
+  width: 900px;
+  height: 300px;
+  background-color: aqua;
+  position: absolute;
+  margin: 0 auto;
+  top: 30%; 
+  left: 20%; 
+  gap :60px;
+  translate: transform(-50% ,-50%);
+  border: 1px solid black;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-box{
+  aspect-ratio: 1/1;
+}
+
+.timer{
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: rgb(138, 228, 228);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 80px; */
+  /* background: transparent; */
+}
+.t{
+  font-size: 50px;
+}
+.w{
+  font-size: 25px;
+}

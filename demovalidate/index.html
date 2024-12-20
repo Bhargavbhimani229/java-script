@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+<body>
+  <form id="orm-validate">
+    <p>
+      <label for="username">Username</label>
+      <input id="username" name="username" type="text" >
+    </p>
+    <p>
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" required>
+    </p>
+    <p>
+      <label for="confirm_password">Confirm password</label>
+      <input id="confirm_password" name="confirm_password" type="password" required>
+    </p>
+    <button>sumit</button>
+  </form>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js
+    "></script>
+    
+  <script>
+    $(document).ready(() => { 
+      $('#orm-validate').validate({ 
+        rules: {
+          username: {
+            required: true,
+            minlength: 2
+          },
+          password: {
+            required: true,
+            minlength: 5
+          },
+          confirm_password: {
+            required: true,
+            minlength: 5,
+            equalTo: "#password"
+          },
+        },
+        messages: {
+          username: {
+            required: "Please enter a username",
+            minlength: "ATLI LENGHT NAKHO.."
+          },
+          password: {
+            required: "please enter a pw",
+            minlength: "5 length is required"
+          },
+          confirm_password: {
+            required: "Please provide a password",
+            minlength: "Your password must be at least 5 characters long",
+            equalTo: "Please enter the same password as above"
+          },
+        }
+
+      })
+    })
+  </script>
+
+</body>
+
+</html>

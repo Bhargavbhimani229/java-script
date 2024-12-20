@@ -1,0 +1,127 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.navbar {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.hero-section {
+  background: linear-gradient(135deg, #007bff, #6f42c1);
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section button {
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hero-section button:hover {
+  transform: scale(1.1);
+  background-color: #ffc107;
+  color: #000;
+}
+
+.category-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 550px; 
+  width: 100%; 
+}
+
+.category-card img {
+  height: 300px; 
+  object-fit: cover; 
+  width: 100%;
+}
+
+.category-card .card-body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  align-items: center;
+  padding: 5px;
+}
+
+.category-card h6,
+.category-card p.description {
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+#btn{
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 8px;
+  text-decoration: none;
+  background-color: #ffc107;
+  color: #000;
+  
+}
+
+.category-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1px;
+}
+
+.category-section .col {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  font-size: 14px;
+  padding: 15px;
+}
+
+.hero-section button:hover {
+  transform: scale(1.1);
+  background-color: #ffc107;
+  color: #000;
+}
+
+
+.category-card:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); 
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef); 
+}
+
+
+.category-card:hover img {
+  transform: scale(1.1); 
+}
+
+.category-card:hover h5 {
+  color: #000000; 
+}
+
+.category-card:hover p {
+  color: #0a0a0a; 
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+

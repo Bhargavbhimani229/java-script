@@ -1,0 +1,100 @@
+/* Body */
+body {
+  background-color: #e9ecef; 
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Form Card */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+  font-size: 1.25rem;
+}
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Form Inputs */
+form .form-label {
+  font-weight: bold;
+  color: #343a40;
+}
+form input, form button {
+  border-radius: 8px;
+}
+form button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons in the Table */
+.btn {
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.btn-success:hover {
+  background-color: #28a745;
+  border-color: #218838;
+}
+.btn-danger:hover {
+  background-color: #dc3545;
+  border-color: #c82333;
+}
+.btn-info:hover {
+  background-color: #17a2b8;
+  border-color: #138496;
+}
+
+/* Table */
+table {
+  margin-top: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.table th, .table td {
+  text-align: center;
+  font-size: 0.9rem;
+  vertical-align: middle;
+  padding: 15px;
+}
+.table thead {
+  background-color: #343a40;
+  color: #fff;
+}
+
+/* Add-to-Cart Badge */
+#cart-btn {
+  transition: all 0.3s ease-in-out;
+}
+#cart-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}

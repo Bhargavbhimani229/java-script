@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- * promise funaction *
+
+   syntax
+
+const fun = new Promise((response , reject) => {
+  block of code 
+})
+
+fun.then(() => {
+
+}).catch(() => {
+
+}) -->
+
+
+  <script>
+    const fun = new Promise((response, reject) => {
+      console.log("Welcome, wait for some second..");
+
+      setInterval(() => {
+        let done = true;
+
+        if (done) {
+          response("Kam ho gaya");
+        }
+        else {
+          reject("Call huva");
+        }
+
+
+      }, 2000)
+
+
+    });
+
+    fun.then((result) => {
+      console.log("Result", result)
+    }).catch((error) => {
+      console.loge("Erro", error);
+    })
+  </script>
+</body>
+
+</html>

@@ -1844,7 +1844,7 @@ function renderProducts(category) {
           <h6>${product.title}</h6>
           <p class="price text-primary">$${product.price.toFixed(2)}</p>
           <button class="btn btn-warning buy-now" data-product-id="${product.id}">Buy Now</button>
-          <a   href="./detail.html"id="btn" onclick="viewProduct(${product.id})">View Product Details</a>
+          <a   href="./detail.html" id="btn" onclick="viewProduct(${product.id})">View Product Details</a>
         </div>
       </div>
     `;

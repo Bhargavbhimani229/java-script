@@ -1,0 +1,241 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+/* Header Styling */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Gradient background */
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Container */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation Links */
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav a:hover {
+  color: #fff700; /* Yellow hover effect */
+  transform: scale(1.1);
+}
+
+/* Logo Styling */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 120px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: white;
+  border-radius: 8px;
+  margin: 20px auto;
+  width: 90%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #ff7e5f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #feb47b;
+  transform: scale(1.1);
+}
+
+/* Numeric List - Fixed Position */
+.numeric-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add some shadow */
+  position: fixed; /* Fixed position */
+  bottom: 20px; /* Place it at the bottom */
+  left: 50%;
+  transform: translateX(-50%); /* Center it horizontally */
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.numeric-list:hover {
+  background-color: #eaeaea; /* Subtle hover effect */
+}
+
+.numeric-list span {
+  display: inline-block;
+  background: #ff7e5f;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.numeric-list span:hover {
+  transform: scale(1.2);
+  background-color: #feb47b; /* Hover color */
+}
+
+/* Main Content */
+.container {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  width: 90%;
+  /* max-width: 1200px; */
+  background-color: white; /* White background for content */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.container p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555; /* Darker text for better readability */
+  line-height: 1.6;
+}
+
+.container button {
+  padding: 10px 20px;
+  background-color: #ff7e5f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.container button:hover {
+  background-color: #feb47b;
+  transform: scale(1.1);
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  font-size: 14px;
+  width: 1478px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .hero {
+    padding: 30px 15px;
+  }
+
+  .numeric-list {
+    gap: 8px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .container h1 {
+    font-size: 28px;
+  }
+
+  .container p {
+    font-size: 16px;
+  }
+
+  .container button {
+    font-size: 14px;
+  }
+}
